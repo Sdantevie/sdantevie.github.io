@@ -1,0 +1,17 @@
+.topbar {
+    background-color: #FD725F;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-breakthrough {
+    color: #1A9ACF;
+    font-family: 'Outfit', sans-serif;
+}
+
+.artificial-intelligence {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.yt-container {
+    backdrop-filter: blur(180px);
+}
