@@ -15,3 +15,69 @@
 .yt-container {
     backdrop-filter: blur(180px);
 }
+
+.ultra {
+    text-shadow: 0px 20.3682px 45.2626px rgba(0, 0, 0, 0.25);
+}
+
+.publish {
+    text-shadow: 0px 18.2048px 40.455px rgba(0, 0, 0, 0.25);
+}
+
+.up-down {
+    animation: upDown 7s linear infinite;
+}
+
+.down-up {
+    animation: downUp 7s linear infinite;
+}
+
+.left-right {
+    animation: leftRight 7s linear infinite;
+}
+
+.right-left {
+    animation: rightLeft 7s linear infinite;
+}
+
+button.slick-prev {
+    display: none;
+}
+.slick-initialized .slick-slide {
+    display: flex !important;
+}
+@keyframes downUp {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes upDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes leftRight {
+    0%, 100% {
+        transform: translateX(-50px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightLeft {
+    0%, 100% {
+        transform: translateX(50px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+}
