@@ -46,6 +46,10 @@ button.slick-prev {
 .slick-initialized .slick-slide {
     display: flex !important;
 }
+
+.podium {
+    background: linear-gradient(0deg, rgba(46, 179, 214, 0.47), rgba(46, 179, 214, 0.47)), linear-gradient(179.76deg, #000000 0.44%, #3DD85A 59.79%, #20A5D6 99.79%)
+}
 @keyframes downUp {
     0%, 100% {
         transform: translateY(0);
