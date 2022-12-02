@@ -18,6 +18,7 @@
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 
 <body>
@@ -161,64 +162,74 @@
                     </div>
                 </div>
 
-                <div class="mt-14 lg:mt-28 xl:mt-40 flex overflow-hidden contwnt" id="slideContainer">
-                    <div id="slideOne" style="left: 0px"
-                        class="bg-[#cc7780]/70 pt-4 flex relative flex-col self-center items-center justify-between rounded-lg mx-3 xl:w-1/4 min-w-[16.5rem] ">
-                        <img class="w-5/6" src="assets/images/lingualchat.svg">
+                <div class="splide mt-10" id="splide-three">
+                    <div class="splide__track">
+                        <div class="splide__list">
 
-                        <div
-                            class="bg-white w-full rounded-lg text-center flex flex-col items-center justify-center px-5 font-['Poppins'] h-32 sm:h-36 mt-3 mx-3 border-[#cc7780] border border-solid">
-                            <span class="flex flex-col font-black mb-2 text-sm lg:text-base">Multilingual
-                                Chat</span>
-                            <span class="text-xs lg:text-sm">Instantly detect location & translate chat to local
-                                language to convert global audience.</span>
-                        </div>
-                    </div>
+                            <div
+                                class="splide__slide bg-[#cc7780]/70 pt-4 flex relative flex-col self-center items-center justify-between rounded-lg mx-3">
+                                <img class="w-5/6" src="assets/images/lingualchat.svg">
 
-                    <div id="slideTwo" style="left: 0px"
-                        class="bg-[#6c99c8]/70 pt-4 relative flex flex-col self-center items-center justify-between rounded-lg mx-3 xl:w-1/4 min-w-[16.5rem] ">
-                        <img class="w-5/6" src="assets/images/calendar.svg">
+                                <div
+                                    class="bg-white w-full rounded-lg text-center flex flex-col items-center justify-center px-5 font-['Poppins'] h-32 sm:h-36 mt-3 mx-3 border-[#cc7780] border border-solid">
+                                    <span class="flex flex-col font-black mb-2 text-sm lg:text-base">Multilingual
+                                        Chat</span>
+                                    <span class="text-xs lg:text-sm">Instantly detect location & translate chat to local
+                                        language to convert global audience.</span>
+                                </div>
+                            </div>
 
-                        <div
-                            class="bg-white w-full rounded-lg text-center flex flex-col items-center justify-center px-5 font-['Poppins'] h-32 sm:h-36 mt-3 mx-3 border-[#6c99c8] border border-solid">
-                            <span class="flex flex-col font-black mb-2 text-sm lg:text-base">Schedule
-                                Appointments</span>
-                            <span class="text-xs lg:text-sm">Book appointments and client calls on the spot without
-                                third party apps!</span>
-                        </div>
-                    </div>
 
-                    <div id="slideThree" style="left: 0px"
-                        class="bg-[#fecb98]/70 pt-4 relative flex flex-col self-center items-center justify-between rounded-lg mx-3 xl:w-1/4 min-w-[16.5rem] ">
-                        <img class="w-5/6" src="assets/images/collect.svg">
+                            <div id="slideTwo"
+                                class="splide__slide bg-[#6c99c8]/70 pt-4 relative flex flex-col self-center items-center justify-between rounded-lg mx-3 ">
+                                <img class="w-5/6" src="assets/images/calendar.svg">
 
-                        <div
-                            class="bg-white w-full rounded-lg text-center flex flex-col items-center justify-center px-5 font-['Poppins'] h-32 sm:h-36 mt-3 mx-3 border-[#fecb98] border border-solid">
-                            <span class="flex flex-col font-black mb-2 text-sm lg:text-base">Collect Phone # or
-                                Email</span>
-                            <span class="text-xs lg:text-sm">Non-pushy approach to collecting customers contact
-                                information without optin
-                                forms</span>
-                        </div>
-                    </div>
+                                <div
+                                    class="bg-white w-full rounded-lg text-center flex flex-col items-center justify-center px-5 font-['Poppins'] h-32 sm:h-36 mt-3 mx-3 border-[#6c99c8] border border-solid">
+                                    <span class="flex flex-col font-black mb-2 text-sm lg:text-base">Schedule
+                                        Appointments</span>
+                                    <span class="text-xs lg:text-sm">Book appointments and client calls on the spot
+                                        without
+                                        third party apps!</span>
+                                </div>
+                            </div>
 
-                    <div id="slideFour" style="left: 0px"
-                        class="bg-[#eb9aa3]/70 relative pt-4 flex flex-col self-center items-center justify-between rounded-lg mx-3 xl:w-1/4 min-w-[16.5rem] ">
-                        <img class="w-5/6" src="assets/images/chatFunnels.svg">
+                            <div id="slideThree"
+                                class="splide__slide bg-[#fecb98]/70 pt-4 relative flex flex-col self-center items-center justify-between rounded-lg mx-3 ">
+                                <img class="w-5/6" src="assets/images/collect.svg">
 
-                        <div
-                            class="bg-white w-full rounded-lg text-center flex flex-col items-center justify-center px-5 font-['Poppins'] h-32 sm:h-36 mt-3 mx-3 border-[#eb9aa3] border border-solid">
-                            <span class="flex flex-col font-black mb-2 text-sm lg:text-base">Chat Funnels</span>
-                            <span class="text-xs lg:text-sm">Customers though your funnel with chat flows that
-                                change
-                                based on response.</span>
+                                <div
+                                    class="bg-white w-full rounded-lg text-center flex flex-col items-center justify-center px-5 font-['Poppins'] h-32 sm:h-36 mt-3 mx-3 border-[#fecb98] border border-solid">
+                                    <span class="flex flex-col font-black mb-2 text-sm lg:text-base">Collect Phone # or
+                                        Email</span>
+                                    <span class="text-xs lg:text-sm">Non-pushy approach to collecting customers contact
+                                        information without optin
+                                        forms</span>
+                                </div>
+                            </div>
+
+                            <div id="slideFour"
+                                class="splide__slide bg-[#eb9aa3]/70 relative pt-4 flex flex-col self-center items-center justify-between rounded-lg mx-3 ">
+                                <img class="w-5/6" src="assets/images/chatFunnels.svg">
+
+                                <div
+                                    class="bg-white w-full rounded-lg text-center flex flex-col items-center justify-center px-5 font-['Poppins'] h-32 sm:h-36 mt-3 mx-3 border-[#eb9aa3] border border-solid">
+                                    <span class="flex flex-col font-black mb-2 text-sm lg:text-base">Chat Funnels</span>
+                                    <span class="text-xs lg:text-sm">Customers though your funnel with chat flows that
+                                        change
+                                        based on response.</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="mt-16 pt-4 md:pt-20 xl:pt-20 relative">
-                    <img class="-z-20 -mt-20 w-full" src="assets/images/blueBg.svg">
-                    <div class="absolute top-20 w-full flex flex-col  mt-4 overflow-hidden">
+                <div class="relative top-10 pt-20 pointy-bottom">
+                    <!-- <img class="-z-20 -mt-20 w-full" src="assets/images/blueBg.svg"> -->
+                    <div class="absolute top-0 left-0 right-0 bottom-0">
+                        <!-- <img class=" w-full" src="assets/images/blueBg.svg"> -->
+                    </div>
+                    <div class="w-full flex flex-col  mt-4 overflow-hidden">
                         <div class="w-full relative hidden md:block">
                             <img class="w-full lg:w-3/6 xl:w-4/6 mx-auto " src="assets/images/onlyAll.svg" />
                             <div class="absolute left-0 top-0 right-0 bottom-0 flex items-center justify-center">
@@ -249,76 +260,95 @@
                                 <div class="border-l h-full"></div>
                                 <div class="border rounded-full h-4 w-4"></div>
                             </div>
-                            <div class="flex flex-col justify-center md:flex-row my-12">
-                                <img class="h-96 w-96" src="assets/images/robot.svg">
-                                <div class="flex flex-col  w-1/4 ml-24">
-                                    <div class="bg-[#E56969] px-3 py-3 rounded-xl">
-                                        <span class="text-white font-black fron-['Outfit'] text-2xl">Hands-Free <br />
-                                            Automated Chat</span>
+                            <div class="flex flex-col items-center justify-center md:flex-row my-12">
+                                <div class="w-3/6 flex items-center justify-end">
+                                    <img class="h-96 w-96" src="assets/images/robot.svg">
+                                </div>
+                                <div class="w-3/6 pl-10">
+                                    <div class="w-2/4 flex flex-col ">
+                                        <div class="bg-[#E56969] px-3 py-3 rounded-xl">
+                                            <span class="text-white font-black fron-['Outfit'] text-2xl">Hands-Free
+                                                <br />
+                                                Automated Chat</span>
+                                        </div>
+                                        <span class="text-white text-base my-2">&middot; AI Self-Serve Chat
+                                        </span>
+                                        <span class="text-white text-base my-2">&middot; Automated Chat Responses
+                                        </span>
+                                        <span class="text-white text-base my-2">&middot; Pre-Designed Chat Flows
+                                        </span>
+                                        <span class="text-white text-base my-2">&middot; Works 24x7
+                                        </span>
                                     </div>
-                                    <span class="text-white text-base my-2">&middot; AI Self-Serve Chat
-                                    </span>
-                                    <span class="text-white text-base my-2">&middot; Automated Chat Responses
-                                    </span>
-                                    <span class="text-white text-base my-2">&middot; Pre-Designed Chat Flows
-                                    </span>
-                                    <span class="text-white text-base my-2">&middot; Works 24x7
-                                    </span>
                                 </div>
                             </div>
 
                             <div class="flex flex-col justify-center md:flex-row my-12">
-                                <div class="flex flex-col w-1/4 -ml-16">
-                                    <div class="bg-[#E56969] px-3 py-3 rounded-xl">
-                                        <span class="text-white font-black fron-['Outfit'] text-2xl">Real-Time <br />
-                                            Live Chat</span>
+                                <div class="w-3/6 flex items-center -ml-10 justify-end">
+                                    <div class="flex flex-col w-2/4">
+                                        <div class="bg-[#E56969] px-3 py-3 rounded-xl">
+                                            <span class="text-white font-black fron-['Outfit'] text-2xl">Real-Time
+                                                <br />
+                                                Live Chat</span>
+                                        </div>
+                                        <span class="text-white text-base my-2">&middot; Instant Customer Support
+                                        </span>
+                                        <span class="text-white text-base my-2">&middot; Unlimited Team Members
+                                        </span>
+                                        <span class="text-white text-base my-2">&middot; Collect Email When Away
+                                        </span>
+                                        <span class="text-white text-base my-2">&middot; Solve Problems & Boost Sale
+                                        </span>
                                     </div>
-                                    <span class="text-white text-base my-2">&middot; Instant Customer Support
-                                    </span>
-                                    <span class="text-white text-base my-2">&middot; Unlimited Team Members
-                                    </span>
-                                    <span class="text-white text-base my-2">&middot; Collect Email When Away
-                                    </span>
-                                    <span class="text-white text-base my-2">&middot; Solve Problems & Boost Sale
-                                    </span>
                                 </div>
-                                <img class="h-96 w-96 ml-8" src="assets/images/liveYotube.svg">
+                                <div class="w-3/6">
+                                    <img class="h-96 w-96" src="assets/images/liveYotube.svg">
+                                </div>
                             </div>
 
-                            <div class="flex flex-col md:flex-row justify-center my-12">
-                                <img class="h-96 w-96 -ml-16" src="assets/images/digitalHuman.svg">
-                                <div class="flex flex-col w-1/4 ml-24">
-                                    <div class="bg-[#E56969] px-3 py-3 rounded-xl">
-                                        <span class="text-white font-black fron-['Outfit'] text-2xl">Digital Human
-                                            <br /> Powered Chat</span>
+
+                            <div class="flex flex-col items-center justify-center md:flex-row my-12">
+                                <div class="w-3/6 flex items-center justify-end">
+                                    <img class="h-96 w-96" src="assets/images/digitalHuman.svg">
+                                </div>
+                                <div class="w-3/6 pl-10">
+                                    <div class="w-2/4 flex flex-col ">
+                                        <div class="bg-[#E56969] px-3 py-3 rounded-xl">
+                                            <span class="text-white font-black fron-['Outfit'] text-2xl">Digital Human
+                                                <br /> Powered Chat</span>
+                                        </div>
+                                        <span class="text-white text-base my-2">&middot; Evoke Emotions
+                                        </span>
+                                        <span class="text-white text-base my-2">&middot; Supercharge Conversions
+                                        </span>
+                                        <span class="text-white text-base my-2">&middot; Convey Messages With Speech
+                                        </span>
+                                        <span class="text-white text-base my-2">&middot; Speed Up Decision Making
+                                        </span>
                                     </div>
-                                    <span class="text-white text-base my-2">&middot; Evoke Emotions
-                                    </span>
-                                    <span class="text-white text-base my-2">&middot; Supercharge Conversions
-                                    </span>
-                                    <span class="text-white text-base my-2">&middot; Convey Messages With Speech
-                                    </span>
-                                    <span class="text-white text-base my-2">&middot; Speed Up Decision Making
-                                    </span>
                                 </div>
                             </div>
 
                             <div class="flex flex-col justify-center md:flex-row my-12">
-                                <div class="flex flex-col w-1/4 -ml-16">
-                                    <div class="bg-[#E56969] px-3 py-3 rounded-xl">
-                                        <span class="text-white font-black fron-['Outfit'] text-2xl">Stand Alone
-                                            Chat</span>
+                                <div class="w-3/6 flex items-center -ml-10 justify-end">
+                                    <div class="flex flex-col w-2/4">
+                                        <div class="bg-[#E56969] px-3 py-3 rounded-xl">
+                                            <span class="text-white font-black fron-['Outfit'] text-2xl">Stand Alone
+                                                Chat</span>
+                                        </div>
+                                        <span class="text-white text-base my-2">&middot; Simple and Ultra Powerful
+                                        </span>
+                                        <span class="text-white text-base my-2">&middot; Minimalistic Design
+                                        </span>
+                                        <span class="text-white text-base my-2">&middot; Full Feature Chat
+                                        </span>
+                                        <span class="text-white text-base my-2">&middot; Live and Automated
+                                        </span>
                                     </div>
-                                    <span class="text-white text-base my-2">&middot; Simple and Ultra Powerful
-                                    </span>
-                                    <span class="text-white text-base my-2">&middot; Minimalistic Design
-                                    </span>
-                                    <span class="text-white text-base my-2">&middot; Full Feature Chat
-                                    </span>
-                                    <span class="text-white text-base my-2">&middot; Live and Automated
-                                    </span>
                                 </div>
-                                <img class="h-96 w-96 ml-12" src="assets/images/chats.svg">
+                                <div class="w-3/6">
+                                    <img class="h-96 w-96" src="assets/images/chats.svg">
+                                </div>
                             </div>
                             <img class="absolute -right-52 -top-72" src="assets/images/blueShadow.svg">
                             <img class="absolute -right-0 top-[30rem]" src="assets/images/ring.svg">
@@ -328,7 +358,7 @@
                     <img class="absolute -bottom-20 z-50 up-down" src="assets/images/sittingOntheFence.svg">
                 </div>
 
-                <div class="bg-[#ededed] pt-24 -mt-20 pb-20">
+                <div class="bg-[#ededed] relative -top-36 -z-10  pt-24 mt-44 pb-20">
                     <div class="flex relative mb-20">
                         <img class="w-[45%]" src="assets/images/slantLeft.svg">
                         <img class="w-[45%] ml-[10%]" src="assets/images/slantRight.svg">
@@ -410,7 +440,7 @@
                                     <span class="font-black text-3xl ml-3">Visual Chat Funnel <br /> Builder</span>
                                 </div>
 
-                                <div class="w-3/4 relative mt-3 rounded-lg bg-[#3799a2] text-white py-3 px-5">
+                                <div class="w-3/4 relative mt-3 rounded-lg bg-[#3799a2] text-white py-5 px-8">
                                     <p class="text-sm">
                                         Drag-and-Drop to create SMART chat flows from scratch or from template for total
                                         chat automation using Artificial Intelligence. <br /> <br />
@@ -423,7 +453,7 @@
                                     </p>
 
                                     <div class="absolute  rounded-lg -z-50 left-4 top-4 bottom-0 w-full h-full">
-                                        <img class="h-full w-full object-cover rounded-lg"
+                                        <img class="object-cover rounded-lg w-full h-full w-full h-full"
                                             src="assets/images/background.svg">
                                         <!-- llsl -->
                                     </div>
@@ -441,7 +471,7 @@
                                     <span class="font-black text-3xl ml-3">Analytics & Data <br /> Driven Results</span>
                                 </div>
 
-                                <div class="w-3/5 relative mt-3 rounded-lg bg-[#3799a2] text-white py-3 px-5">
+                                <div class="w-3/5 relative mt-3 rounded-lg bg-[#3799a2] text-white py-5 px-8">
                                     <p class="text-base">
                                         Record, track and analyze chat history, traffic data and analytics.
                                         <br /> <br />
@@ -450,7 +480,7 @@
                                     </p>
 
                                     <div class="absolute  rounded-lg -z-50 left-4 top-4 bottom-0 w-full h-full">
-                                        <img class="h-full w-full object-cover rounded-lg"
+                                        <img class="object-cover rounded-lg w-full h-full"
                                             src="assets/images/background.svg">
                                         <!-- llsl -->
                                     </div>
@@ -475,7 +505,7 @@
                                     </span>
                                 </div>
 
-                                <div class="w-3/4 relative mt-3 rounded-lg bg-[#3799a2] text-white py-3 px-5">
+                                <div class="w-3/4 relative mt-3 rounded-lg bg-[#3799a2] text-white py-5 px-8">
                                     <p class="text-base">
                                         Communicate and integrate with all 3rd party apps with easy zapier integration
                                         and
@@ -487,7 +517,7 @@
                                     </p>
 
                                     <div class="absolute  rounded-lg -z-50 left-4 top-4 bottom-0 w-full h-full">
-                                        <img class="h-full w-full object-cover rounded-lg"
+                                        <img class="object-cover rounded-lg w-full h-full"
                                             src="assets/images/background.svg">
                                         <!-- llsl -->
                                     </div>
@@ -504,7 +534,7 @@
                                     <span class="font-black text-3xl ml-3">Ready-Made Chat <br /> Templates</span>
                                 </div>
 
-                                <div class="w-3/5 relative mt-3 rounded-lg bg-[#3799a2] text-white py-3 px-5">
+                                <div class="w-3/5 relative mt-3 rounded-lg bg-[#3799a2] text-white py-5 px-8">
                                     <p class="text-base">
                                         Activate a fully customizable chat template with 1-click to launch engaging chat
                                         flows like a pro without any creativity or writing a single word!
@@ -514,7 +544,7 @@
                                     </p>
 
                                     <div class="absolute  rounded-lg -z-50 left-4 top-4 bottom-0 w-full h-full">
-                                        <img class="h-full w-full object-cover rounded-lg"
+                                        <img class="object-cover rounded-lg w-full h-full"
                                             src="assets/images/background.svg">
                                         <!-- llsl -->
                                     </div>
@@ -539,7 +569,7 @@
                                     </span>
                                 </div>
 
-                                <div class="w-3/4 relative mt-3 rounded-lg bg-[#3799a2] text-white py-3 px-5">
+                                <div class="w-3/4 relative mt-3 rounded-lg bg-[#3799a2] text-white py-5 px-8">
                                     <p class="text-base">
                                         You have complete control on when the chat box will appear.
                                         <br /> <br />
@@ -549,7 +579,7 @@
                                     </p>
 
                                     <div class="absolute  rounded-lg -z-50 left-4 top-4 bottom-0 w-full h-full">
-                                        <img class="h-full w-full object-cover rounded-lg"
+                                        <img class="object-cover rounded-lg w-full h-full"
                                             src="assets/images/background.svg">
                                         <!-- llsl -->
                                     </div>
@@ -567,7 +597,7 @@
                                         Response</span>
                                 </div>
 
-                                <div class="w-3/5 relative mt-3 rounded-lg bg-[#3799a2] text-white py-3 px-5">
+                                <div class="w-3/5 relative mt-3 rounded-lg bg-[#3799a2] text-white py-5 px-8">
                                     <p class="text-base">
                                         Use Smart AI to greet customers with their name, location, phone # or email to
                                         supercharge your engagement and sales!
@@ -575,7 +605,7 @@
                                     </p>
 
                                     <div class="absolute  rounded-lg -z-50 left-4 top-4 bottom-0 w-full h-full">
-                                        <img class="h-full w-full object-cover rounded-lg"
+                                        <img class="object-cover rounded-lg w-full h-full"
                                             src="assets/images/background.svg">
                                         <!-- llsl -->
                                     </div>
@@ -599,7 +629,7 @@
                                         Response</span>
                                 </div>
 
-                                <div class="w-3/4 relative mt-3 rounded-lg bg-[#3799a2] text-white py-3 px-5">
+                                <div class="w-3/4 relative mt-3 rounded-lg bg-[#3799a2] text-white py-5 px-8">
                                     <p class="text-base">
                                         Automatically respond to customers based on a keyword entered into chat.
                                         <br /> <br />
@@ -609,7 +639,7 @@
                                     </p>
 
                                     <div class="absolute  rounded-lg -z-50 left-4 top-4 bottom-0 w-full h-full">
-                                        <img class="h-full w-full object-cover rounded-lg"
+                                        <img class="object-cover rounded-lg w-full h-full"
                                             src="assets/images/background.svg">
                                         <!-- llsl -->
                                     </div>
@@ -667,18 +697,18 @@
                     </div>
                 </div>
 
-                <div class="relative flex flex-col">
+                <div class="relative flex flex-col w-full pt-12">
                     <img class="absolute -top-24" src="assets/images/weirdBoxes.png">
                     <img src="assets/images/snakeArrow.png" class="absolute top-10 left-64">
-                    <div class="absolute -z-[100]">
-                        <img src="assets/images/blue.png">
+                    <div class="absolute -z-[100] right-0 left-0">
+                        <img src="assets/images/blue.png" class="w-full">
                     </div>
 
-                    <div class="w-full relative mt-32">
-                        <img class="w-full xl:w-4/6 mx-auto" src="assets/images/pence.png" />
+                    <div class="w-full relative mt-40">
+                        <img class="w-full xl:w-3/6 mx-auto" src="assets/images/pence.png" />
                         <div class="absolute left-0 top-10 right-0 bottom-0 flex items-center justify-center">
                             <span
-                                class="w-2/6 xl:w-3/6 text-xs sm:text-xl md:text-2xl lg:text-2xl text-center font-black text-black">
+                                class="w-2/6 text-xs sm:text-xl md:text-2xl lg:text-2xl text-center font-black text-black">
                                 Convert Global Audiences With Fully Automated
                                 Multilingual Chat Capabilities…
                             </span>
@@ -715,9 +745,9 @@
 
                 </div>
 
-                <div class="relative">
-                    <div class="absolute -z-[101] -top-16">
-                        <img src="assets/images/bots.png">
+                <div class="relative pt-24">
+                    <div class="absolute -z-[101] -top-16 left-0 right-0">
+                        <img src="assets/images/bots.png" class="w-full">
                     </div>
 
                     <div class="w-full relative pt-10">
@@ -731,11 +761,19 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-4 gap-3 grid-rows-1 mt-8">
-                        <img class="h-full object-cover rounded-lg" src="assets/images/Group 39973.svg">
-                        <img class="h-full object-cover rounded-lg" src="assets/images/Group 39974.svg">
-                        <img class="h-full object-cover rounded-lg" src="assets/images/Group 39975.svg">
-                        <img class="h-full object-cover rounded-lg" src="assets/images/Group 39976.svg">
+                    <div class="splide" id="splide-four">
+                        <div class="splide__track">
+                            <div class="splide__list h-[34rem]">
+                                <img class="object-cover rounded-lg w-full h-full splide__slide mr-3"
+                                    src="assets/images/Group 39973.svg">
+                                <img class="object-cover rounded-lg w-full h-full splide__slide mr-3"
+                                    src="assets/images/Group 39974.svg">
+                                <img class=" object-cover rounded-lg w-full h-full splide__slide mr-3"
+                                    src="assets/images/Group 39975.svg">
+                                <img class="object-cover rounded-lg w-full h-full splide__slide mr-3"
+                                    src="assets/images/Group 39976.svg">
+                            </div>
+                        </div>
                     </div>
 
                     <div class="w-full relative pt-10">
@@ -809,9 +847,9 @@
 
                 </div>
 
-                <div class="relative">
-                    <div class="absolute -z-[102]">
-                        <img src="assets/images/BG.png">
+                <div class="relative -mt-24 pt-20">
+                    <div class="absolute -z-[102] left-0 right-0">
+                        <img src="assets/images/BG.png" class="w-full">
                     </div>
 
                     <div class="flex flex-col items-center justify-center pt-48">
@@ -851,7 +889,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#f1feff] -mt-28 pt-28 relative -z-[120]">
+                <div class="bg-[#f1feff] relative -z-[120] pt-24">
                     <div class="mt-20">
                         <div class="border-t border-b border-dashed border-stone-500 py-2 w-full">
 
@@ -863,6 +901,138 @@
                                 <span class="text-4xl text-black font-['Outfit']">
                                     <span class="underline">10 Easy Ways</span> To Profit With HumanBot…
                                 </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="splide my-10 py-8" id="splide-five">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div
+                                    class="splide__slide mr-10 flex bg-white rounded-lg drop-shadow-xl border px-10 py-24">
+                                    <div class="w-2/4 flex flex-col items-center justify-center">
+                                        <div class="flex items-start flex-col">
+                                            <img src="assets/images/image 36.svg" class="h-16">
+                                            <span class="font-black text-2xl mt-8 mb-12">Offer Support 24x7</span>
+                                            <span class="text-lg">Use AI to automate chat <br /> and enhance customer
+                                                experience. </span>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/4">
+                                        <img class="mx-auto" src="assets/images/Group 39951.svg">
+                                    </div>
+                                </div>
+                                <div
+                                    class="splide__slide mr-10 flex bg-white rounded-lg drop-shadow-xl border px-10 py-24">
+                                    <div class="w-2/4 flex flex-col items-center justify-center">
+                                        <div class="flex items-start flex-col">
+                                            <img src="assets/images/image 36.svg" class="h-16">
+                                            <span class="font-black text-2xl mt-8 mb-12">Build Brand Recognition</span>
+                                            <span class="text-lg">Interactive one-on-one experience turns prospects
+                                                <br /> into repeat customers and builds customer <br /> loyalty! </span>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/4">
+                                        <img class="mx-auto" src="assets/images/Group 39951 (1).svg">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="splide__slide mr-10 flex bg-white rounded-lg drop-shadow-xl border px-10 py-24">
+                                    <div class="w-2/4 flex flex-col items-center justify-center">
+                                        <div class="flex items-start flex-col">
+                                            <img src="assets/images/image 36.svg" class="h-16">
+                                            <span class="font-black text-2xl mt-8 mb-12">Multilingual Support</span>
+                                            <span class="text-lg">Answer customers in their language and expand <br />
+                                                your business to global markets worldwide. </span>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/4">
+                                        <img class="mx-auto h-96" src="assets/images/Group 39951 (2).svg">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="splide__slide mr-10 flex bg-white rounded-lg drop-shadow-xl border px-10 py-24">
+                                    <div class="w-2/4 flex flex-col items-center justify-center">
+                                        <div class="flex items-start flex-col">
+                                            <img src="assets/images/image 36.svg" class="h-16">
+                                            <span class="font-black text-2xl mt-8 mb-12">10X Your Sales</span>
+                                            <span class="text-lg">Boost conversion rates by offering coupons, <br />
+                                                special deals, and personalized <br /> offers to customers via chat.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/4">
+                                        <img class="mx-auto h-96" src="assets/images/Group 39951 (3).svg">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="splide__slide mr-10 flex bg-white rounded-lg drop-shadow-xl border px-10 py-24">
+                                    <div class="w-2/4 flex flex-col items-center justify-center">
+                                        <div class="flex items-start flex-col">
+                                            <img src="assets/images/image 36.svg" class="h-16">
+                                            <span class="font-black text-2xl mt-8 mb-12">Maximize Buyer Intent</span>
+                                            <span class="text-lg"> Answer questions and solve problems to speed <br />
+                                                up customer decision making and <br /> maximize profits!</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/4">
+                                        <img class="mx-auto h-96" src="assets/images/Group 39951 (4).svg">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="splide__slide mr-10 flex bg-white rounded-lg drop-shadow-xl border px-10 py-24">
+                                    <div class="w-2/4 flex flex-col items-center justify-center">
+                                        <div class="flex items-start flex-col">
+                                            <img src="assets/images/image 36.svg" class="h-16">
+                                            <span class="font-black text-2xl mt-8 mb-12">
+                                                Sell Chat Services For Profit
+                                            </span>
+                                            <span class="text-lg">Create chat for your clients offline and online to
+                                                <br /> earn big as an agency!</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/4">
+                                        <img class="mx-auto h-96" src="assets/images/Group 39951 (5).svg">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="splide__slide mr-10 flex bg-white rounded-lg drop-shadow-xl border px-10 py-24">
+                                    <div class="w-2/4 flex flex-col items-center justify-center">
+                                        <div class="flex items-start flex-col">
+                                            <img src="assets/images/image 36.svg" class="h-16">
+                                            <span class="font-black text-2xl mt-8 mb-12">Reduce Bounce Rates
+                                            </span>
+                                            <span class="text-lg">Keep more customers longer on your site and <br />
+                                                reduce advertising costs.</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/4">
+                                        <img class="mx-auto h-96" src="assets/images/Group 39951 (6).svg">
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="splide__slide mr-10 flex bg-white rounded-lg drop-shadow-xl border px-10 py-24">
+                                    <div class="w-2/4 flex flex-col items-center justify-center">
+                                        <div class="flex items-start flex-col">
+                                            <img src="assets/images/image 36.svg" class="h-16">
+                                            <span class="font-black text-2xl mt-8 mb-12">Leads Without Optin Forms
+                                            </span>
+                                            <span class="text-lg">Collect pre-qualified leads in chat with high <br />
+                                                purchase intent to maximize revenues!</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/4">
+                                        <img class="mx-auto h-96" src="assets/images/Group 39951 (7).svg">
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -901,7 +1071,7 @@
                     <img src="assets/images/Vector 85.svg" class="mx-auto mt-3 mb-8 w-3/6">
 
                     <div
-                        class="w-5/6 mx-auto border border-dashed border-[#20A5D6] drop-shadow-lg rounded-xl mt-4 flex bg-white">
+                        class="w-5/6 mx-auto border border-dashed border-[#20A5D6] drop-shadow-lg rounded-xl mt-10 flex bg-white">
                         <div class="flex flex-col w-3/6 items-center justify-center py-10">
                             <div class="bg-black rounded-lg text-white  py-2 items-center px-10 flex">
                                 <img src="assets/images/icon.svg" class=" w-16 mr-4 h-16">
@@ -922,7 +1092,7 @@
                                 <span class="font-black text-xl font-['Outfit']">$69/mo</span>
                             </div>
                         </div>
-                        <div class="podium w-3/6 rounded-xl flex items-center justify-center flex-col">
+                        <div class="podium w-full rounded-xl w-3/6 flex items-center justify-center flex-col">
                             <img class="w-60 mt-20" src="assets/images/_2087021928368.svg">
 
                             <span class="text-4xl mb-5 font-['Outfit'] font-black text-white">$97</span>
@@ -934,8 +1104,8 @@
                 </div>
 
                 <div class="relative pt-20">
-                    <div class="absolute -top-0 -z-[122]">
-                        <img src="assets/images/pricesBG.png">
+                    <div class="absolute -top-0 -z-[122] left-0 right-0">
+                        <img src="assets/images/pricesBG.png" class="w-full">
                     </div>
 
                     <!-- <img src="assets/images/GetHumanBot.png" class="w-3/6"> -->
@@ -950,14 +1120,14 @@
                     <div class="flex items-center justify-center mt-3">
                         <div class="flex flex-col w-2/6 mr-2">
                             <div class="relative sm:mt-4 mt-7 w-full">
-                                <img class="mx-auto" src="assets/images/Group 39957.png" />
+                                <img class="mx-auto w-full" src="assets/images/Group 39957.png" />
                                 <div
                                     class="absolute left-0 top-0 right-0 bottom-0 flex flex-col items-center justify-center">
                                     <span class="text-3xl text-white font-['Outfit']">Personal License</span>
                                     <span class="text-2xl text-white">(With HumanBot Branding)</span>
                                 </div>
                             </div>
-                            <div class="bg-white border-b flex items-center justify-start -mt-2 px-10 pt-4 pb-2">
+                            <div class="bg-white border-b flex items-center justify-start -mt-8 px-10 pt-10 pb-2">
                                 <img src="assets/images/image 39.png">
                                 <span class="text-xl ml-3">Real-Time Live Chat
                                 </span>
@@ -1051,8 +1221,8 @@
                                 </span>
                             </div>
 
-                            <div class="relative -mt-2 w-full">
-                                <img class="mx-auto" src="assets/images/Group 39957.png" />
+                            <div class="relative -mt-4 w-full">
+                                <img class="mx-auto w-full" src="assets/images/Group 39957.png" />
                                 <div
                                     class="absolute left-0 top-0 right-0 bottom-0 flex flex-col items-center justify-center">
                                     <span class="text-5xl text-white font-['Outfit'] font-black">$47</span>
@@ -1086,14 +1256,14 @@
                         </div>
                         <div class="flex flex-col w-2/6 ml-2">
                             <div class="relative sm:mt-4 mt-7 w-full">
-                                <img class="mx-auto" src="assets/images/Group 39957 (1).png" />
+                                <img class="mx-auto w-full" src="assets/images/Group 39957 (1).png" />
                                 <div
                                     class="absolute left-0 top-0 right-0 bottom-0 flex flex-col items-center justify-center">
                                     <span class="text-3xl text-white font-['Outfit']">Commercial License</span>
                                     <span class="text-2xl text-white">(Without HumanBot Branding)</span>
                                 </div>
                             </div>
-                            <div class="bg-white border-b flex items-center justify-start -mt-2 px-10 pt-4 pb-2">
+                            <div class="bg-white border-b flex items-center justify-start -mt-8 px-10 pt-10 pb-2">
                                 <img src="assets/images/image 39.png">
                                 <span class="text-xl ml-3">Real-Time Live Chat
                                 </span>
@@ -1188,8 +1358,8 @@
                                 </span>
                             </div>
 
-                            <div class="relative -mt-2 w-full">
-                                <img class="mx-auto" src="assets/images/Group 39957 (1).png" />
+                            <div class="relative -mt-4 w-full">
+                                <img class="mx-auto w-full" src="assets/images/Group 39957 (1).png" />
                                 <div
                                     class="absolute left-0 top-0 right-0 bottom-0 flex flex-col items-center justify-center">
                                     <span class="text-5xl text-white font-['Outfit'] font-black">$97</span>
@@ -1224,15 +1394,16 @@
                     </div>
                 </div>
 
-                <div class="mt-10 relative">
-                    <img src="assets/images/Group 39970.png" class="absolute left-0 -top-[56rem]">
-                    <div class="absolute -top-0 -z-[122]">
-                        <img src="assets/images/Rectangle 4402.png">
-                    </div>
+                <div class="mt-10 relative bg-black pb-36">
+                    <img src="assets/images/Group 39970.png"
+                        class="absolute left-0 z-[0] pointer-events-none -top-[56rem]">
+                    <!-- <div class="absolute -top-0 -z-[122] left-0 right-0">
+                        <img src="assets/images/Rectangle 4402.png" class="w-full">
+                    </div> -->
 
                     <div class="relative sm:mt-4 mt-7 w-full">
                         <img class="w-3/6 mx-auto hidden sm:block" src="assets/images/Group 40011.png" />
-                        <div class="absolute left-0 top-20 right-0 bottom-0 flex items-center justify-center">
+                        <div class="absolute left-0 top-24 right-0 bottom-0 flex items-center justify-center">
                             <span class="text-4xl text-black font-['Outfit'] underline">
                                 Frequently Asked Questions
                             </span>
@@ -1244,51 +1415,109 @@
                             <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
                                 <div class="flex justify-between">
                                     <span>Can I Add Chat To Unlimited Sites? </span>
-                                    <span class="text-lg">+</span>
+                                    <span data-bs-toggle="collapse" data-bs-target="#addChat" class="text-lg">+</span>
+                                </div>
+                                <div id="addChat" class="mt-4 collapse">
+                                    <span>
+                                        YES - VideoCreator comes with step-by-step video training walking you through
+                                        the entire process right from creating your videos to getting results. (yes,
+                                        this also includes training on how to sell your videos for top dollar!)
+                                    </span>
                                 </div>
                             </div>
                             <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
                                 <div class="flex justify-between">
-                                    <span>Can I Add Chat To Unlimited Sites? </span>
-                                    <span class="text-lg">+</span>
+                                    <span>Are There Any Upgrades or Hidden Fees? </span>
+                                    <span data-bs-toggle="collapse" data-bs-target="#hiddenFees"
+                                        class="text-lg">+</span>
+                                </div>
+                                <div id="hiddenFees" class="mt-4 collapse">
+                                    <span>
+                                        YES - VideoCreator comes with step-by-step video training walking you through
+                                        the entire process right from creating your videos to getting results. (yes,
+                                        this also includes training on how to sell your videos for top dollar!)
+                                    </span>
                                 </div>
                             </div>
                             <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
                                 <div class="flex justify-between">
-                                    <span>Can I Add Chat To Unlimited Sites? </span>
-                                    <span class="text-lg">+</span>
+                                    <span>Is This A One-Time Price or Monthly Fees? </span>
+                                    <span data-bs-toggle="collapse" data-bs-target="#monthlyFees"
+                                        class="text-lg">+</span>
+                                </div>
+                                <div id="monthlyFees" class="mt-4 collapse">
+                                    <span>
+                                        YES - VideoCreator comes with step-by-step video training walking you through
+                                        the entire process right from creating your videos to getting results. (yes,
+                                        this also includes training on how to sell your videos for top dollar!)
+                                    </span>
                                 </div>
                             </div>
                             <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
                                 <div class="flex justify-between">
-                                    <span>Can I Add Chat To Unlimited Sites? </span>
-                                    <span class="text-lg">+</span>
+                                    <span>Does The Chat Work On Mobile? </span>
+                                    <span data-bs-toggle="collapse" data-bs-target="#mobile" class="text-lg">+</span>
+                                </div>
+                                <div id="mobile" class="mt-4 collapse">
+                                    <span>
+                                        YES - VideoCreator comes with step-by-step video training walking you through
+                                        the entire process right from creating your videos to getting results. (yes,
+                                        this also includes training on how to sell your videos for top dollar!)
+                                    </span>
                                 </div>
                             </div>
                         </div>
                         <div class="flex-col w-2/6 ml-2">
                             <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
                                 <div class="flex justify-between">
-                                    <span>Can I Add Chat To Unlimited Sites? </span>
-                                    <span class="text-lg">+</span>
+                                    <span>Do You Have a Money Back Guarantee? </span>
+                                    <span data-bs-toggle="collapse" data-bs-target="#guarantee" class="text-lg">+</span>
+                                </div>
+                                <div id="guarantee" class="mt-4 collapse">
+                                    <span>
+                                        YES - VideoCreator comes with step-by-step video training walking you through
+                                        the entire process right from creating your videos to getting results. (yes,
+                                        this also includes training on how to sell your videos for top dollar!)
+                                    </span>
                                 </div>
                             </div>
                             <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
                                 <div class="flex justify-between">
-                                    <span>Can I Add Chat To Unlimited Sites? </span>
-                                    <span class="text-lg">+</span>
+                                    <span>Do You Have Both Live & Automated Chat?</span>
+                                    <span data-bs-toggle="collapse" data-bs-target="#automated" class="text-lg">+</span>
+                                </div>
+                                <div id="automated" class="mt-4 collapse">
+                                    <span>
+                                        YES - VideoCreator comes with step-by-step video training walking you through
+                                        the entire process right from creating your videos to getting results. (yes,
+                                        this also includes training on how to sell your videos for top dollar!)
+                                    </span>
                                 </div>
                             </div>
                             <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
                                 <div class="flex justify-between">
-                                    <span>Can I Add Chat To Unlimited Sites? </span>
-                                    <span class="text-lg">+</span>
+                                    <span>Do You Have Step-by-Step Training? </span>
+                                    <span data-bs-toggle="collapse" data-bs-target="#training" class="text-lg">+</span>
+                                </div>
+                                <div id="training" class="mt-4 collapse">
+                                    <span>
+                                        YES - VideoCreator comes with step-by-step video training walking you through
+                                        the entire process right from creating your videos to getting results. (yes,
+                                        this also includes training on how to sell your videos for top dollar!)
+                                    </span>
                                 </div>
                             </div>
                             <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
                                 <div class="flex justify-between">
-                                    <span>Can I Add Chat To Unlimited Sites? </span>
-                                    <span class="text-lg">+</span>
+                                    <span>Languages Supported By HumanBot? </span>
+                                    <span data-bs-toggle="collapse" data-bs-target="#humanbot" class="text-lg">+</span>
+                                </div>
+                                <div id="humanbot" class="mt-4 collapse">
+                                    <span>
+                                        YES - VideoCreator comes with step-by-step video training walking you through
+                                        the entire process right from creating your videos to getting results. (yes,
+                                        this also includes training on how to sell your videos for top dollar!)
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -1306,7 +1535,160 @@
 
                     <div class="text-center mt-2">
                         <span class="text-white text-center text-xl">Here Are Some Fun Facts...</span>
+
                     </div>
+
+                    <div class="splide mt-10" id="splide-one">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide">
+                                    <div class="flex">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                    </div>
+
+                                    <span class="my-7">
+                                        “40% of companies in the US, Europe, and China use chat software for customer
+                                        engagement.”
+                                    </span>
+                                </div>
+                                <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide">
+                                    <div class="flex">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                    </div>
+
+                                    <span class="my-7">
+                                        “Businesses can reduce costs by up to 30% just by adding a chatbot to their
+                                        website.”
+                                    </span>
+                                </div>
+                                <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide">
+                                    <div class="flex">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                    </div>
+
+                                    <span class="my-10">
+                                        “Chat has the highest satisfaction rate 73% vs 51% email and 44% for phone
+                                        support.”
+                                    </span>
+                                </div>
+                                <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide">
+                                    <div class="flex">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                    </div>
+
+                                    <span class="my-7">
+                                        “Having a chat service increases a company’s conversion rate by 3.87%.”
+                                    </span>
+                                </div>
+                                <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide">
+                                    <div class="flex">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                    </div>
+
+                                    <span class="my-5">
+                                        “80% of companies say that chat has increased sales, revenue, and customer
+                                        loyalty””
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 splide" id="splide-two">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide">
+                                    <div class="flex">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                    </div>
+
+                                    <span class="my-10">
+                                        “42% of website visitors claim that a company is more trustworthy if they
+                                        offer live
+                                        chat support.”
+                                    </span>
+                                </div>
+                                <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide">
+                                    <div class="flex">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                    </div>
+
+                                    <span class="my-10">
+                                        “Live chat can increase customer loyalty by 51%.”
+                                    </span>
+                                </div>
+                                <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide">
+                                    <div class="flex">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                    </div>
+
+                                    <span class="my-10">
+                                        “42% of customers prefer live chat over phone conversations”
+                                    </span>
+                                </div>
+                                <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide">
+                                    <div class="flex">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                    </div>
+
+                                    <span class="my-10">
+                                        “Businesses can reduce costs by up to 30% just by adding a chatbot to their
+                                        website.”
+                                    </span>
+                                </div>
+                                <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide">
+                                    <div class="flex">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                        <img class="mr-1" src="assets/images/Vector (2).svg">
+                                    </div>
+
+                                    <span class="my-10">
+                                        “Live chat customers spend up to 60% more than people who don’t.”
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="relative sm:mt-8 mt-7 w-full">
                         <img class="w-2/6 mx-auto hidden sm:block" src="assets/images/Vector (1).png" />
@@ -1328,6 +1710,22 @@
 
                     <img src="assets/images/Vector 85.svg" class="mx-auto mt-3 mb-4 w-3/6">
 
+                    <div class="splide my-24" id="splide-six">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="bg-white p-8 mr-3 rounded-lg splide__slide">
+                                    <img src="assets/images/slide6 1.png">
+                                </div>
+                                <div class="bg-white p-8 mr-3 rounded-lg splide__slide">
+                                    <img src="assets/images/slide6 1 (2).png">
+                                </div>
+                                <div class="bg-white p-8 mr-3 rounded-lg splide__slide">
+                                    <img src="assets/images/slide6 1 (3).png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="flex justify-center items-center mt-8 mx-10">
                         <img class="w-20 h-20  hidden xl:block" src="assets/images/animation-right.gif">
                         <div class="relative">
@@ -1335,7 +1733,8 @@
                             <img class="absolute -top-2 bottom-0 left-[0.3rem]"
                                 src="assets/images/buttonBackground.svg">
                             <div class="absolute left-0 top-0 bottom-0 right-0 flex items-center justify-center">
-                                <span class="font-['Manrope'] -mt-4 text-lg xl:text-xl text-white">Get instant Access To
+                                <span class="font-['Manrope'] -mt-4 text-lg xl:text-xl text-white">Get instant
+                                    Access To
                                     HumanBot</span>
                             </div>
                         </div>
@@ -1343,12 +1742,13 @@
                     </div>
                 </div>
 
-                <div class="relative pt-10 mt-20">
-                    <img src="assets/images/chat-bot-4521333-3754710_1 1.svg" class="absolute left-0 w-52 -top-16 up-down">
-                    <img src="assets/images/Group 39971.svg" class="absolute right-0 top-0 w-52 up-down">
-                    <div class="absolute bottom-0 top-0 -z-[20]">
-                        <img src="assets/images/Rectangle 4397.png">
-                    </div>
+                <div class="relative pointy-top">
+                    <img src="assets/images/chat-bot-4521333-3754710_1 1.svg"
+                        class="absolute left-0 w-52 -top-36 up-down">
+                    <img src="assets/images/Group 39971.svg" class="absolute right-0 -top-10 w-52 up-down">
+                    <!-- <div class="absolute bottom-0 top-0 -z-[20] left-0 right-0">
+                        <img src="assets/images/Rectangle 4397.png" class="w-full">
+                    </div> -->
 
                     <img src="assets/images/logo-main.png" class="sm:w-48 w-44 mx-auto" />
                     <div class="w-full flex items-center justify-center my-8">
@@ -1367,7 +1767,7 @@
 
                     <div class="w-full flex items-center justify-center my-8">
                         <span>
-                            Contact Support   |   Terms   |   Privacy Policy   |   Disclaimer | Affiliate / FB Group
+                            Contact Support | Terms | Privacy Policy | Disclaimer | Affiliate / FB Group
                         </span>
                     </div>
 
@@ -1380,8 +1780,84 @@
     </div>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('#splide-one', {
+                type: 'loop',
+                drag: 'free',
+                arrows: false,
+                perPage: 4,
+                pagination: false,
+                focus: 'center',
+                autoScroll: {
+                    speed: 1,
+                }
+            });
+            splide.mount(window.splide.Extensions);
 
-    <script type="text/javascript" src="assets/js/customSlider.js"></script>
+            var splideTwo = new Splide('#splide-two', {
+                type: 'loop',
+                drag: 'free',
+                arrows: false,
+                perPage: 4,
+                pagination: false,
+                focus: 'center',
+                autoScroll: {
+                    speed: -1,
+                }
+            });
+            splideTwo.mount(window.splide.Extensions);
+
+            var splideThree = new Splide('#splide-three', {
+                type: 'loop',
+                drag: 'free',
+                arrows: false,
+                perPage: 4,
+                pagination: false,
+                focus: 'center',
+                autoScroll: {
+                    speed: 1,
+                }
+            });
+            splideThree.mount(window.splide.Extensions);
+
+            var splideFour = new Splide('#splide-four', {
+                type: 'loop',
+                drag: 'free',
+                arrows: false,
+                perPage: 4,
+                pagination: false,
+                autoScroll: {
+                    speed: 1,
+                }
+            });
+            splideFour.mount(window.splide.Extensions);
+
+            var splideFive = new Splide('#splide-five', {
+                type: 'loop',
+                drag: 'free',
+                perPage: 1,
+                padding: '12rem',
+                pagination: false,
+                focus: 'center',
+            });
+            splideFive.mount();
+
+            var splideSix = new Splide('#splide-six', {
+                type: 'loop',
+                drag: 'free',
+                perPage: 2,
+                padding: '12rem',
+                pagination: false,
+                focus: 'center',
+            });
+            splideSix.mount();
+        });
+    </script>
 </body>
 
 </html>

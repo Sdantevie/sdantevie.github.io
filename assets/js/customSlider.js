@@ -4,12 +4,6 @@ const removeElement = (elementId) => {
 }
 
 const slide = () => {
-    // const queuedElements = [
-    //     document.getElementById('slideOne'), 
-    //     document.getElementById('slideTwo'), 
-    //     document.getElementById('slideThree'), 
-    //     document.getElementById('slideFour')
-    // ];
 
     const container = document.getElementById('slideContainer');
     const queuedElements = container.children;
@@ -39,3 +33,5 @@ const slide = () => {
 
 
 slide();
+
+
