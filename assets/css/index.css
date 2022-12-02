@@ -28,6 +28,10 @@
     background-color: #021921;
 }
 
+.believing {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
 /* #splide-five > .splide__slide{
     transform: scale(0.98, 0.98); 
     display: inline-flex;  
