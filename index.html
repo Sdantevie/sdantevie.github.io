@@ -54,7 +54,7 @@
                     <div
                         class="absolute left-0 top-0 right-0 bottom-0 flex items-center artificial-intelligence justify-center">
                         <span
-                            class="w-4/6 xl:w-4/6 text-xs sm:text-xl md:text-2xl lg:text-3xl text-center text-white">Artificial
+                            class="w-4/6 xl:w-4/6 text-xs sm:text-xl md:text-2xl lg:text-3xl text-center text-white" style="line-height: 3rem !important;">Artificial
                             Intelligence | Live & Automated Chat | Digital Talking Humans | Text-To-Speech </span>
                     </div>
                 </div>
@@ -254,7 +254,7 @@
 
                 <div class="relative flex flex-col mt-16 mx-8 md:mx-0">
                     <div
-                        class="absolute left-0 right-0 top-0 bottom-0 flex-col items-center justify-center hidden md:flex">
+                        class="absolute left-0 right-0 top-0 bottom-0 flex-col -z-50 items-center justify-center hidden md:flex">
                         <div class="border rounded-full h-4 w-4"></div>
                         <div class="border-l h-full"></div>
                         <div class="border rounded-full h-4 w-4"></div>
@@ -349,8 +349,8 @@
                             <img class="h-96 md:w-96 w-full" src="assets/images/chats.svg">
                         </div>
                     </div>
-                    <img class="absolute -right-52 -top-72" src="assets/images/blueShadow.svg">
-                    <img class="absolute -right-8 top-[30rem]" src="assets/images/ring.svg">
+                    <img class="absolute -right-52 -top-72 pointer-events-none" src="assets/images/blueShadow.svg">
+                    <img class="absolute -right-8 top-[30rem] pointer-events-none" src="assets/images/ring.svg">
                 </div>
             </div>
             <img class="absolute z-50 pointer-events-none -bottom-[32rem] hidden md:block" src="assets/images/sideManShadow.svg">
@@ -433,7 +433,7 @@
                 </div>
 
                 <div class="relative sm:mt-8 mt-7 w-full">
-                    <img class="w-4/6 mx-auto md:w-3/6" src="assets/images/ahead.svg" />
+                    <img class="w-5/6 mx-auto md:w-3/6" src="assets/images/ahead.svg" />
                     <div class="absolute left-0 top-0 right-0 bottom-0 flex items-center justify-center">
                         <span class="text-white text-base font-['Maven Pro']">One Step Ahead of the
                             Competition!</span>
@@ -639,7 +639,7 @@
                                 Response</span>
                         </div>
 
-                        <div class="w-3/4 relative mt-3 rounded-lg bg-[#3799a2] text-white py-5 px-8">
+                        <div class="w-3/4 w-full relative mt-3 rounded-lg bg-[#3799a2] text-white py-5 px-8">
                             <p class="text-base">
                                 Automatically respond to customers based on a keyword entered into chat.
                                 <br /> <br />
@@ -803,13 +803,13 @@
             <div class="splide mt-16" id="splide-four">
                 <div class="splide__track">
                     <div class="splide__list h-[34rem]">
-                        <img class="object-cover rounded-lg w-full h-full splide__slide mr-3 w-[20.5rem] lg:w-[24rem]"
+                        <img class="object-cover rounded-lg w-full h-full splide__slide mr-3 w-[16.5rem] lg:w-[19rem]"
                             src="assets/images/Group 39973.svg">
-                        <img class="object-cover rounded-lg w-full h-full splide__slide mr-3 w-[20.5rem] lg:w-[24rem]"
+                        <img class="object-cover rounded-lg w-full h-full splide__slide mr-3 w-[16.5rem] lg:w-[19rem]"
                             src="assets/images/Group 39974.svg">
-                        <img class=" object-cover rounded-lg w-full h-full splide__slide mr-3 w-[20.5rem] lg:w-[24rem]"
+                        <img class=" object-cover rounded-lg w-full h-full splide__slide mr-3 w-[16.5rem] lg:w-[19rem]"
                             src="assets/images/Group 39975.svg">
-                        <img class="object-cover rounded-lg w-full h-full splide__slide mr-3 w-[20.5rem] lg:w-[24rem]"
+                        <img class="object-cover rounded-lg w-full h-full splide__slide mr-3 w-[16.5rem] lg:w-[19rem]"
                             src="assets/images/Group 39976.svg">
                     </div>
                 </div>
@@ -841,7 +841,7 @@
                         <img class="w-full xl:w-4/6 mx-auto" src="assets/images/Group 39998.png" />
                         <div class="absolute left-0 -top-5 right-0 bottom-0 flex items-center justify-center">
 
-                            <p class="md:text-base text-base w-3/6 text-white">
+                            <p class="md:text-base text-xs w-3/6 text-white">
                                 Automatically respond to customers based on a keyword entered into chat.
                                 <br />
                                 Enter your keywords and the automated response within the app to provide
@@ -873,7 +873,7 @@
                         <img class="w-full xl:w-4/6" src="assets/images/Group 39998.png" />
                         <div class="absolute left-10 -top-5 right-0 bottom-0 flex items-center md:justify-start justify-center">
 
-                            <p class="text-base w-5/6 md:w-3/6 text-white">
+                            <p class="text-xs md:text-base w-5/6 md:w-3/6 text-white">
                                 Includes XX high-quality male and female Text-To-Speech voices in all popular
                                 languages and accents.
 
@@ -1628,9 +1628,9 @@
             <div class="flex md:items-start flex-col md:flex-row items-center justify-center mt-8">
                 <div class="flex-col md:w-2/6 w-5/6 mr-2">
                     <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
-                        <div class="flex justify-between">
+                        <div class="flex justify-between" data-bs-toggle="collapse" data-bs-target="#addChat">
                             <span>Can I Add Chat To Unlimited Sites? </span>
-                            <span data-bs-toggle="collapse" data-bs-target="#addChat" class="text-lg">+</span>
+                            <span class="text-lg">+</span>
                         </div>
                         <div id="addChat" class="mt-4 collapse">
                             <span>
@@ -1641,9 +1641,9 @@
                         </div>
                     </div>
                     <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
-                        <div class="flex justify-between">
+                        <div class="flex justify-between"  data-bs-toggle="collapse" data-bs-target="#hiddenFees">
                             <span>Are There Any Upgrades or Hidden Fees? </span>
-                            <span data-bs-toggle="collapse" data-bs-target="#hiddenFees" class="text-lg">+</span>
+                            <span class="text-lg">+</span>
                         </div>
                         <div id="hiddenFees" class="mt-4 collapse">
                             <span>
@@ -1654,9 +1654,9 @@
                         </div>
                     </div>
                     <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
-                        <div class="flex justify-between">
+                        <div class="flex justify-between" data-bs-toggle="collapse" data-bs-target="#monthlyFees">
                             <span>Is This A One-Time Price or Monthly Fees? </span>
-                            <span data-bs-toggle="collapse" data-bs-target="#monthlyFees" class="text-lg">+</span>
+                            <span class="text-lg">+</span>
                         </div>
                         <div id="monthlyFees" class="mt-4 collapse">
                             <span>
@@ -1667,9 +1667,9 @@
                         </div>
                     </div>
                     <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
-                        <div class="flex justify-between">
+                        <div class="flex justify-between" data-bs-toggle="collapse" data-bs-target="#mobile">
                             <span>Does The Chat Work On Mobile? </span>
-                            <span data-bs-toggle="collapse" data-bs-target="#mobile" class="text-lg">+</span>
+                            <span class="text-lg">+</span>
                         </div>
                         <div id="mobile" class="mt-4 collapse">
                             <span>
@@ -1682,9 +1682,9 @@
                 </div>
                 <div class="flex-col md:w-2/6 w-5/6 mx-0 md:ml-2">
                     <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
-                        <div class="flex justify-between">
+                        <div class="flex justify-between" data-bs-toggle="collapse" data-bs-target="#guarantee">
                             <span>Do You Have a Money Back Guarantee? </span>
-                            <span data-bs-toggle="collapse" data-bs-target="#guarantee" class="text-lg">+</span>
+                            <span class="text-lg">+</span>
                         </div>
                         <div id="guarantee" class="mt-4 collapse">
                             <span>
@@ -1695,9 +1695,9 @@
                         </div>
                     </div>
                     <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
-                        <div class="flex justify-between">
+                        <div class="flex justify-between" data-bs-toggle="collapse" data-bs-target="#automated">
                             <span>Do You Have Both Live & Automated Chat?</span>
-                            <span data-bs-toggle="collapse" data-bs-target="#automated" class="text-lg">+</span>
+                            <span class="text-lg">+</span>
                         </div>
                         <div id="automated" class="mt-4 collapse">
                             <span>
@@ -1708,9 +1708,9 @@
                         </div>
                     </div>
                     <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
-                        <div class="flex justify-between">
+                        <div class="flex justify-between" data-bs-toggle="collapse" data-bs-target="#training">
                             <span>Do You Have Step-by-Step Training? </span>
-                            <span data-bs-toggle="collapse" data-bs-target="#training" class="text-lg">+</span>
+                            <span class="text-lg">+</span>
                         </div>
                         <div id="training" class="mt-4 collapse">
                             <span>
@@ -1721,9 +1721,9 @@
                         </div>
                     </div>
                     <div class="flex flex-col bg-[#ffe9c8] px-5 py-4 rounded-lg mb-4">
-                        <div class="flex justify-between">
+                        <div class="flex justify-between" data-bs-toggle="collapse" data-bs-target="#humanbot">
                             <span>Languages Supported By HumanBot? </span>
-                            <span data-bs-toggle="collapse" data-bs-target="#humanbot" class="text-lg">+</span>
+                            <span class="text-lg">+</span>
                         </div>
                         <div id="humanbot" class="mt-4 collapse">
                             <span>
@@ -1754,7 +1754,7 @@
             <div class="splide mt-10" id="splide-one">
                 <div class="splide__track">
                     <div class="splide__list">
-                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[20.5rem] lg:w-[24rem]">
+                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[16.5rem] lg:w-[19rem]">
                             <div class="flex">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
@@ -1768,7 +1768,7 @@
                                 engagement.”
                             </span>
                         </div>
-                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[20.5rem] lg:w-[24rem]">
+                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[16.5rem] lg:w-[19rem]">
                             <div class="flex">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
@@ -1782,7 +1782,7 @@
                                 website.”
                             </span>
                         </div>
-                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[20.5rem] lg:w-[24rem]">
+                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[16.5rem] lg:w-[19rem]">
                             <div class="flex">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
@@ -1796,7 +1796,7 @@
                                 support.”
                             </span>
                         </div>
-                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[20.5rem] lg:w-[24rem]">
+                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[16.5rem] lg:w-[19rem]">
                             <div class="flex">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
@@ -1809,7 +1809,7 @@
                                 “Having a chat service increases a company’s conversion rate by 3.87%.”
                             </span>
                         </div>
-                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[20.5rem] lg:w-[24rem]">
+                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[16.5rem] lg:w-[19rem]">
                             <div class="flex">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
@@ -1830,7 +1830,7 @@
             <div class="mt-5 splide" id="splide-two">
                 <div class="splide__track">
                     <div class="splide__list">
-                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[20.5rem] lg:w-[24rem]">
+                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[16.5rem] lg:w-[19rem]">
                             <div class="flex">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
@@ -1845,7 +1845,7 @@
                                 chat support.”
                             </span>
                         </div>
-                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[20.5rem] lg:w-[24rem]">
+                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[16.5rem] lg:w-[19rem]">
                             <div class="flex">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
@@ -1858,7 +1858,7 @@
                                 “Live chat can increase customer loyalty by 51%.”
                             </span>
                         </div>
-                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[20.5rem] lg:w-[24rem]">
+                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[16.5rem] lg:w-[19rem]">
                             <div class="flex">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
@@ -1871,7 +1871,7 @@
                                 “42% of customers prefer live chat over phone conversations”
                             </span>
                         </div>
-                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[20.5rem] lg:w-[24rem]">
+                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[16.5rem] lg:w-[19rem]">
                             <div class="flex">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
@@ -1885,7 +1885,7 @@
                                 website.”
                             </span>
                         </div>
-                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[20.5rem] lg:w-[24rem]">
+                        <div class="flex flex-col p-7 bg-white rounded-3xl mr-3 splide__slide w-[16.5rem] lg:w-[19rem]">
                             <div class="flex">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
                                 <img class="mr-1" src="assets/images/Vector (2).svg">
