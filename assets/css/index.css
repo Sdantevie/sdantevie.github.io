@@ -117,6 +117,16 @@
     border-right: 50vw solid transparent;
 }
 
+.publish-but {
+   color: black;
+   background-color: #eaeaea; 
+}
+
+.active.publish-but {
+    background-color: #46ce6c !important;
+    color: white !important;
+}
+
 .prices-BG {
     clip-path: polygon(0 0%, 100% 2%, 100% 100%, 0 100%);
     background-color: #C0E6EB;
